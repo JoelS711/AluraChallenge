@@ -1,52 +1,49 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-header{
+header {
     width: 100%;
-    padding: 30px;
+    padding: 2rem;
 }
 
-.logo{
-    width: 30px;
+.logo img {
+    width: 1.8rem;
 }
 
-.logo img{
-    width: 100%;
-}
-
-body{
+body {
     font-family: 'Lato', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
-    width: 100%;
     background-color: #F3F5FC;
+    width: 98vw;
+    height: 100dvh;
 }
 
-.container{
+.container {
     display: flex;
-    /* flex-direction: row; */
-    justify-content: space-between;
-    height: 80vh;
-    width: 80%;
-    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
 }
 
-.section-textarea{
+.section-textarea {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 60%;
-    margin-top: 20px;
+    height: 44rem;
+    padding: 2rem;
 }
 
 .section-textarea .textarea {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 2rem;
     background-color: transparent;
     color: #0A3871;
     font-size: 30px;
@@ -62,23 +59,21 @@ body{
     font-size: 30px;
 }
 
-.btn-container{
+.btn-container {
     /*display: flex;
     flex-direction: row;
     justify-content: space-evenly;*/
     width: 100%;
     text-align: center;
-    margin-bottom: 20px;
 }
 
-.btn-container .btn-encriptar{
+.btn-container .btn-encriptar {
     background-color: #0A3871;
-    border-radius: 10px;
+    border-radius: 1rem;
     border: 1px solid white;
-    width: 20%;
-    height: 30px;
+    width: 40%;
+    height: 3rem;
     color: white;
-    font-weight: bold;
 }
 
 .btn-container .btn-encriptar:hover {
@@ -91,14 +86,13 @@ body{
 
 
 
-.btn-container .btn-desencriptar{
+.btn-container .btn-desencriptar {
     background-color: #D8DFE8;
-    border-radius: 10px;
+    border-radius: 1rem;
     border: 1px solid #0A3871;
-    width: 20%;
-    height: 30px;
+    width: 40%;
+    height: 3rem;
     color: #0A3871;
-    font-weight: bold;
 }
 
 .btn-container .btn-desencriptar:hover {
@@ -109,43 +103,43 @@ body{
     color: #D8DFE8;
 }
 
-.section-answer{
+.section-answer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 2rem;
     width: 30%;
+    height: 44rem;
     background-color: #ffffff;
     border-radius: 20px;
 }
 
 
-.figure img{
+.figure img {
     max-width: 100%;
     height: auto;
 }
 
-.section-answer h4{
+.section-answer h4 {
     text-align: center;
     color: #0A3871;
     font-size: 35px;
 
 }
 
-.section-answer p{
+.section-answer p {
     text-align: center;
     color: #0A3871;
     font-size: 15px;
 }
 
-.btn-container2{
+.btn-container2 {
     width: 100%;
     text-align: center;
-    margin-top: 20px;
 }
 
-.btn-container2 .btn-copiar{
+.btn-container2 .btn-copiar {
     background-color: #D8DFE8;
     border-radius: 10px;
     border: 1px solid #0A3871;
@@ -164,23 +158,78 @@ body{
     color: #D8DFE8;
 }
 
-.footer{
+.footer {
     width: 100%;
     text-align: center;
-    margin-top: 50px;
+    padding-top: 2rem;
 }
 
-.information{
+.information {
     width: 100%;
     padding: 20px;
     background-color: #ffffff;
 }
 
-.logojoel img{
-    width: 5%;
-    padding: auto;
+.logojoel img {
+    width: 2rem;
 }
 
-.information p{
+.information p {
     text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .textarea {
+        padding: 0;
+    }
+
+    .section-textarea {
+        width: 100%;
+        height: 20rem;
+        padding: 0;
+    }
+
+    .section-textarea .textarea {
+        height: 12rem;
+        padding: 0;
+    }
+
+    .section-answer {
+        width: 100%;
+        height: 12rem;
+        top: 0;
+    }
+
+    .figure img {
+        display: none;
+    }
+
+    .btn-container {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        gap: .6rem;
+    }
+
+    .btn-container .btn-encriptar {
+        width: 100%;
+    }
+
+    .btn-container .btn-desencriptar {
+        width: 100%;
+    }
+
+
+
 }
